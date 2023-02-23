@@ -1,32 +1,60 @@
-# notatki github
-course = "PYTHON PROGRAMMING"
-print(len(course))  #liczba znaków ze spacjami
-print(course[0]) #liczba znaków o indeksie 0 (pierwsza litera) 1 (druga litera)
-print(course[5:2]) #przedział
-print(course[-1]) #od końca
-print(course[2:]) #od 2 do końca
-print(course[:3]) #do 3 znaków (nie włącznie)
-print(course[:]) #maksymalna skrajnosć z jednej i drugiej (tak samo jak bez niczego)
-print(course[::2]) #wszystko od początku do końca ale co drugi element
+course = "Phyton Programming"
+print(course.upper()) #powiększenie
+print(course.lower()) #małe litery
+print(course.title()) #powiększenie pierwszej
+print(course.lstrip()) #kasuje przestrzeń
+print(course.find("pro"))  #znalezione na numerze -1 w ciągu - nie istnieje
+print(course.find("Pro"))  #znalezione na numerze -1
+print(course.replace("P", "x")) #zmiana
+print("jjj" in course) #czy jjj występuje w nazwie
+print("j" not in course) #czy j nie występuje w nazwie
+#github
+print(10/3)
+print(10//3) #obcięcie reszty z dzielenia
+print(10**3) #potęga
+print(10%3) #10 dzielone na 3 to 3 z reszta 1
 
-# [x:y:z]
-# x - początek
-# y - koniec
-# z - krok
+import math
+print(round(2.9)) #zaokrąglenie
+print(round(-2.9)) #wart bezwzgl
+print(math.ceil(2.2)) #podbij do góry
+print(math.floor(2.2)) #podbij do dołu
 
-a = "Julia"
-b = "krawiecka"
-print (a+ " " +b)
-print(a * 3, b, end="---") #ctrl +d - kopiowanie
-print(a * 3, b, end="---") #ctrl +d
-#ctrl z - cofanie
-print(f"witaj {a} cześć") #f ważne do zmiany i podstawienia
-print(type(a)) #zwraca jakiego typu jest dana zmienna
+x = print("x: ")
+print(type(x))
+#y = x + 1
+#bool(x) #falsz prawda 0.1 #wartość różna od 0
 
-x = input('Podaj swój wiek: ')
-print(int(x)+2)
 
-james_bond = 7
-# nasz cel to 007
-# zfill() - dodaj zero
-print(str(james_bond).zfill(3)) #do trzeciego znaku wypełnij zerem
+age = 22
+if age >= 18:
+    print("Eligible")
+else:
+    print("Not eligible")
+
+    # if int(wiek) >= 18:
+
+for zmienna in range (3): # (4, 10, 2) OD,DO,STEP
+    print(zmienna)
+
+    #PYCHARM
+
+
+
+
+
+    #ord("b"# większe # ord("B"
+#zmienna = 1220
+#if zmienna == 1220:
+#    print (blah)
+#elif zmienna ==130:
+  #  print(kakaka)
+#else:
+#    print(jdjd)
+
+# 120 -- blahblah
+# 130 - kakaka
+# else -- coś innego
+#elif == else if
+#
+
