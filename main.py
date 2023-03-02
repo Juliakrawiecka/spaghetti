@@ -1,60 +1,49 @@
-course = "Phyton Programming"
-print(course.upper()) #powiększenie
-print(course.lower()) #małe litery
-print(course.title()) #powiększenie pierwszej
-print(course.lstrip()) #kasuje przestrzeń
-print(course.find("pro"))  #znalezione na numerze -1 w ciągu - nie istnieje
-print(course.find("Pro"))  #znalezione na numerze -1
-print(course.replace("P", "x")) #zmiana
-print("jjj" in course) #czy jjj występuje w nazwie
-print("j" not in course) #czy j nie występuje w nazwie
-#github
-print(10/3)
-print(10//3) #obcięcie reszty z dzielenia
-print(10**3) #potęga
-print(10%3) #10 dzielone na 3 to 3 z reszta 1
+imie = "jan"
 
-import math
-print(round(2.9)) #zaokrąglenie
-print(round(-2.9)) #wart bezwzgl
-print(math.ceil(2.2)) #podbij do góry
-print(math.floor(2.2)) #podbij do dołu
+print(bool("")) #zwraca false
+print(bool("tomek")) #zwraca true
 
-x = print("x: ")
-print(type(x))
-#y = x + 1
-#bool(x) #falsz prawda 0.1 #wartość różna od 0
+if imie: #imie jest truthy
+    print("imie istnieje")
 
+successful = True
+for number in range(3):
+    print("Attempt")
+    if successful:
+        print("Successful")
+        break #wyjście z pętli
 
-age = 22
-if age >= 18:
-    print("Eligible")
+successful = False
+for number in range(3):
+    print("Attempt")
+    if successful:
+        print("Successful")
+        break
 else:
-    print("Not eligible")
+    print("Attempted 3 times and failed")
 
-    # if int(wiek) >= 18:
+for x in range(5): #x do pieciu czyli od 0 do 4
+    for y in range(3): #y od 0 do 2
+        print(f"({x}, {y})") #wydrukowac wspolrzedne
 
-for zmienna in range (3): # (4, 10, 2) OD,DO,STEP
-    print(zmienna)
+#iterable
+for x in ("Phyton"):
+    print(x)
 
-    #PYCHARM
+#number = 100
+#while number > 0:
+   # print(x//2) #coś tutaj jeszcze
+count=0
+for x in range(1,10):
+    if x %2 == 0:
+        count += 0
+        print(x // 2) == 0
 
+def nazwafunkcji():
+    print("Hi there")
+    print("Welcome abroad")
+nazwafunkcji()
 
-
-
-
-    #ord("b"# większe # ord("B"
-#zmienna = 1220
-#if zmienna == 1220:
-#    print (blah)
-#elif zmienna ==130:
-  #  print(kakaka)
-#else:
-#    print(jdjd)
-
-# 120 -- blahblah
-# 130 - kakaka
-# else -- coś innego
-#elif == else if
-#
-
+def dodawanie(x,y): #ilość zmiennych musi byc rowna ilosci tego tam 2 i 3 czyli ich jest dwa tak jak dwa sa x i y ##aby wiecej dodaj w def =0
+    print(x + y)
+dodawanie(2,3)
